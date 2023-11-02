@@ -50,7 +50,9 @@ currentColor.addEventListener("touchend", function(event){
     let endX = event.changedTouches[0].clientX
     let endY = event.changedTouches[0].clientY
 
-    let direction = endX > startX + 50 ? "right" : endX < startX - 50 ? "left" : false
+    let direction = 
+        endX > startX + 50 ? "right"
+        : endX < startX - 50 ? "left" : false
 
     if (direction === "left"){
         currentRGB = generateRGB()
